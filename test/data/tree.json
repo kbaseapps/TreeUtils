@@ -1,0 +1,160 @@
+{
+  "default_node_labels": {
+    "kb|g.206722": "Aminicenantes bacterium SCGC AAA255-K14 (kb|g.206722)",
+    "kb|g.207953": "Carsonella ruddii CE isolate Thao2000 (kb|g.207953)",
+    "kb|g.207954": "Carsonella ruddii CS isolate Thao2000 (kb|g.207954)",
+    "kb|g.207955": "Carsonella ruddii HT isolate Thao2000 (kb|g.207955)",
+    "kb|g.207956": "Carsonella ruddii PC isolate NHV (kb|g.207956)",
+    "kb|g.208351": "Gemmatimonadetes bacterium JGI 0000112-M07 (kb|g.208351)",
+    "kb|g.208353": "Deinococcus-Thermus bacterium JGI 0000112-G17 (kb|g.208353)",
+    "kb|g.208452": "Proteobacteria bacterium JGI 0000113-D06 (kb|g.208452)",
+    "kb|g.210451": "Nasuia deltocephalinicola str. NAS-ALF (kb|g.210451)",
+    "kb|g.215926": "Rhizobium etli CIAT 894 (kb|g.215926)",
+    "kb|g.23062": "Leptospira interrogans serovar Djasiman str. LT1649 (kb|g.23062)",
+    "kb|g.23278": "Rhizobium etli CIAT 894 (kb|g.23278)",
+    "kb|g.23629": "Tremblaya princeps PCVAL (kb|g.23629)",
+    "kb|g.24316": "Actinoalloteichus spitiensis RMV-1378 (kb|g.24316)",
+    "kb|g.244916": "Candidatus Hodgkinia cicadicola (kb|g.244916)",
+    "kb|g.245207": "Salmonella enterica subsp. enterica serovar Enteritidis str. SA20082034 (kb|g.245207)",
+    "kb|g.245243": "Salmonella enterica subsp. enterica serovar Enteritidis str. SA20100239 (kb|g.245243)",
+    "kb|g.25431": "Carsonella ruddii HC isolate Thao2000 (kb|g.25431)",
+    "kb|g.26569": "Candidatus Carsonella ruddii PV (kb|g.26569)",
+    "kb|g.26977": "Candidatus Hodgkinia cicadicola Dsem (kb|g.26977)",
+    "user1": "Genome 34260/3/1 (Carsonella_ruddii_Thao2000.gbk_genome)"
+  },
+  "kb_refs": {
+    "kb|g.206722": {
+      "g": [
+        "kb|g.206722"
+      ]
+    },
+    "kb|g.207953": {
+      "g": [
+        "kb|g.207953"
+      ]
+    },
+    "kb|g.207954": {
+      "g": [
+        "kb|g.207954"
+      ]
+    },
+    "kb|g.207955": {
+      "g": [
+        "kb|g.207955"
+      ]
+    },
+    "kb|g.207956": {
+      "g": [
+        "kb|g.207956"
+      ]
+    },
+    "kb|g.208351": {
+      "g": [
+        "kb|g.208351"
+      ]
+    },
+    "kb|g.208353": {
+      "g": [
+        "kb|g.208353"
+      ]
+    },
+    "kb|g.208452": {
+      "g": [
+        "kb|g.208452"
+      ]
+    },
+    "kb|g.210451": {
+      "g": [
+        "kb|g.210451"
+      ]
+    },
+    "kb|g.215926": {
+      "g": [
+        "kb|g.215926"
+      ]
+    },
+    "kb|g.23062": {
+      "g": [
+        "kb|g.23062"
+      ]
+    },
+    "kb|g.23278": {
+      "g": [
+        "kb|g.23278"
+      ]
+    },
+    "kb|g.23629": {
+      "g": [
+        "kb|g.23629"
+      ]
+    },
+    "kb|g.24316": {
+      "g": [
+        "kb|g.24316"
+      ]
+    },
+    "kb|g.244916": {
+      "g": [
+        "kb|g.244916"
+      ]
+    },
+    "kb|g.245207": {
+      "g": [
+        "kb|g.245207"
+      ]
+    },
+    "kb|g.245243": {
+      "g": [
+        "kb|g.245243"
+      ]
+    },
+    "kb|g.25431": {
+      "g": [
+        "kb|g.25431"
+      ]
+    },
+    "kb|g.26569": {
+      "g": [
+        "kb|g.26569"
+      ]
+    },
+    "kb|g.26977": {
+      "g": [
+        "kb|g.26977"
+      ]
+    },
+    "user1": {
+      "g": [
+        "user1"
+      ]
+    }
+  },
+  "leaf_list": [
+    "kb|g.206722",
+    "kb|g.207953",
+    "kb|g.207954",
+    "kb|g.207955",
+    "kb|g.207956",
+    "kb|g.208351",
+    "kb|g.208353",
+    "kb|g.208452",
+    "kb|g.210451",
+    "kb|g.215926",
+    "kb|g.23062",
+    "kb|g.23278",
+    "kb|g.23629",
+    "kb|g.24316",
+    "kb|g.244916",
+    "kb|g.245207",
+    "kb|g.245243",
+    "kb|g.25431",
+    "kb|g.26569",
+    "kb|g.26977",
+    "user1"
+  ],
+  "tree": "((kb|g.210451:0.4495,((kb|g.207956:0.10434,kb|g.26569:0.0935)1.000:0.10122,((kb|g.207954:0.05739,(kb|g.207953:5.5E-4,user1:5.5E-4)1.000:0.03878)1.000:0.21062,(kb|g.207955:0.05235,kb|g.25431:0.0491)1.000:0.16532)0.935:0.04923)1.000:0.37049)1.000:0.15186500000000003,((kb|g.208452:0.64721,((((((kb|g.208351:0.20034,kb|g.24316:0.2566)0.942:0.05182,kb|g.208353:0.20096)0.186:0.01435,kb|g.206722:0.378)0.438:0.03371,kb|g.23062:0.44563)0.227:0.01698,((kb|g.215926:0.0,kb|g.23278:0.0):0.24422,(kb|g.245207:5.5E-4,kb|g.245243:0.00146)1.000:0.2803)0.853:0.04731)0.998:0.08737,kb|g.23629:0.63839)0.321:0.0579):0.04069,(kb|g.244916:0.31001,kb|g.26977:0.39234)1.000:0.34285)0.240:0.10261499999999996);",
+  "tree_attributes": {
+    "cog_codes": "[\"16\",\"103\",\"532\",\"72\",\"12\",\"97\",\"533\",\"126\",\"256\",\"52\",\"96\",\"102\",\"100\",\"244\",\"504\",\"94\",\"18\",\"98\",\"99\",\"13\",\"172\",\"30\",\"130\",\"86\",\"93\",\"186\",\"49\",\"89\",\"92\",\"90\",\"164\",\"81\",\"185\",\"87\",\"88\",\"51\",\"91\",\"519\",\"80\",\"48\",\"215\",\"343\",\"150\",\"151\",\"41\",\"46\",\"127\",\"82\",\"105\"]"
+  },
+  "type": "SpeciesTree"
+}

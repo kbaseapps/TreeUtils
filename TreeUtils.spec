@@ -9,6 +9,11 @@ module TreeUtils {
     /* @id kb KBaseTrees.Tree */
 	typedef string Tree_id;
 
+	/*
+	    tree_refs - (required) list of WS references
+	    included_fields - (optional) subset of tree fields to include
+	*/
+
 	typedef structure {
         list <string> tree_refs;
         list <string> included_fields;
@@ -20,19 +25,15 @@ module TreeUtils {
     } TreeData;
 
 	funcdef get_trees(GetTreesParams params)
-	    returns (list<TreeData> returnVal) authentication required;
+	    returns (list<TreeData> result) authentication required;
 
     typedef structure {
-       Workspace.ws_id id;
+       Workspace.ws_id ws_id;
        list<Workspace.ObjectSaveData> trees;
     } SaveTreesParams;
 
-    typedef structure {
-       Workspace.object_info info;
-    } SaveTreeResult;
-
     funcdef save_trees(SaveTreesParams params)
-               returns (list<SaveTreeResult> returnVal) authentication required;
+               returns (list<Workspace.object_info> result) authentication required;
 
     typedef structure {
         Tree_id input_ref;
