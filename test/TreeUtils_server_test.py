@@ -102,6 +102,15 @@ class TreeUtilsTest(unittest.TestCase):
         self.assertEqual(len(ret[0]), 11)
         assert 'KBaseTrees.Tree' in ret[0][2]
 
+        del params['trees'][0]['data']['tree']
+        with self.assertRaisesRegexp(ValueError, "missing 'tree' attribute"):
+            ret = self.getImpl().save_trees(self.getContext(), params)[0]
+
+        params['trees'][0]['data']['tree'] = "foo"
+        with self.assertRaisesRegexp(ValueError, "invalid newick tree"):
+            ret = self.getImpl().save_trees(self.getContext(), params)[0]
+
+
     def test_make_newick(self):
         params = {'input_ref': self.tree_ref, 'destination_dir': self.scratch}
         ret = self.getImpl().tree_to_newick_file(self.getContext(), params)[0]

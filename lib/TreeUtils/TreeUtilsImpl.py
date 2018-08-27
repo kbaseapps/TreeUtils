@@ -387,10 +387,17 @@ class TreeUtils:
         logging.info("Starting 'save_trees'")
         self.utils.validate_params(params, ("ws_id", "trees"), ('type',))
         trees = []
-        for t in params['trees']:
+        for i, t in enumerate(params['trees']):
             self.utils.validate_params(t, ("data",), ("name", "hidden", "meta", "type"))
             if 'type' in t and t['type'] != 'KBaseTrees.Tree':
                 raise ValueError("This method only saves KBaseTrees.Tree objects")
+            if "tree" not in t['data']:
+                raise ValueError("Object {} missing 'tree' attribute containing newick tree"
+                                 .format(i))
+            if not Utils.validate_newick(t['data']['tree']):
+                raise ValueError("Object {} has an invalid newick tree: {}"
+                                 .format(i, t['data']['tree']))
+
             t['type'] = 'KBaseTrees.Tree'
             trees.append(t)
 

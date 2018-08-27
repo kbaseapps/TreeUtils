@@ -3,6 +3,9 @@ import os
 import shutil
 import uuid
 
+import ete3
+from ete3.parser.newick import NewickError
+
 from DataFileUtil.DataFileUtilClient import DataFileUtil
 
 class Utils:
@@ -24,6 +27,15 @@ class Utils:
         for param in params:
             if param not in defined_param:
                 logging.warning("Unexpected parameter {} supplied".format(param))
+
+    @staticmethod
+    def validate_newick(newick):
+        """Validates a Newick string by attempting to make a tree with ete3"""
+        try:
+            ete3.Tree(newick)
+        except NewickError:
+            return False
+        return True
 
     def to_newick(self, params):
         """Convert an Tree to a Newick File"""
